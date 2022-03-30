@@ -1,4 +1,4 @@
-(lang dune 2.7)
+(lang dune 3.0)
 
 (name jsoo-react)
 
@@ -23,8 +23,8 @@
   (dune (and (>= 2) (< 4)))
   (ocaml (and (>= 4.10.0) (< 5.0.0)))
 
-  (js_of_ocaml (and (>= 4.0.0) (<= 5.0.0)))
-  (gen_js_api (and (>= 1.0.8) (< 1.1.0)))
+  js_of_ocaml
+  gen_js_api
   (ppxlib (>= 0.23.0))
 
   ;; Test dependencies
@@ -40,5 +40,4 @@
   ;; Example dependencies, using with-test so that consumers don't install them (until package is released in opam)
   (ppx_blob :with-test)
   (js_of_ocaml-lwt :with-test)
-
 ))
